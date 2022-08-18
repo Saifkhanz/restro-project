@@ -1,17 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <img class="logo" alt="Resturant logo" src="./assets/restroimage.png" />
+    <router-view />
+  </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+};
 </script>
 
 <style>
@@ -21,6 +17,32 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 8px;
+}
+.logo {
+  margin-bottom: 5px;
+  width: 150px;
+}
+.registration input,
+.login input,
+.add input {
+  width: 300px;
+  height: 40px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  display: block;
+  border: 1px solid seagreen;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sign-up-btn,
+.login-btn,
+.add-btn {
+  width: 320px;
+  height: 40px;
+  border: 1px solid skyblue;
+  background: rgb(119, 13, 48);
+  color: #fff;
+  cursor: pointer;
 }
 </style>
